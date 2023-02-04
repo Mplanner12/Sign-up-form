@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,100;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(bgr1.jpg);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+.container{
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  background-color:#fff;
+}
+
+.container header{
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container form{
+  margin-top: 30px;
+}
+
+form.field{
+  margin-bottom: 10px;
+}
+form .input-field{
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+.input-field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  border: 1px solid #d1d1d1;
+}
+
+.invalid  input{
+  border-color: #d93025;
+}
+
+.input-field .show-hide{
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  padding: 3px;
+  color: #919191;
+  cursor: pointer;
+}
+
+.field .error{
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+  display: none;
+}
+
+.invalid .error{
+  display: flex;
+}
+
+.error .error-icon{
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+.create-password .error{
+  align-items: flex-start;
+}
+
+.create-password .error-icon{
+  margin-top: 4px;
+}
+
+.button{
+  margin: 25px 0 6px;
+}
+
+.button input{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #4070f4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input:hover{
+  background-color: #0e4bf1;
+}
